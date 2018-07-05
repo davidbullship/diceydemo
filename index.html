@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "This example code was stolen from <a href='https://www.w3schools.com/js/js_whereto.asp' target='_blank'>w3schools</a>.";
-}
-</script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
-<h1>A Web Page</h1>
-<p id="demo">This is a test of how to insert JavaScript into HTML.</p>
-<button type="button" onclick="myFunction()">Press Me</button>
-
+    <h1>DiceyDemo</h1>
+    <p id='diceOutput'>This is a test of how to insert JavaScript into HTML.</p>
+    <script src="diceRoll.js"></script>
+    <form id="frm1">
+        <input type="text" id="minRoll" placeholder='Min'><br>
+        <input type="text" id="maxRoll" placeholder='Max'><br>
+        <input type="button" onclick="diceRoll(minRoll,maxRoll)" value="Roll The Dice">
+    </form>
 </body>
 </html>
