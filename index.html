@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>DiceyDemo</title>
     <link rel="stylesheet" href="index.css">
-</head>
+  </head>
 
-<body>
-    <h1>DiceyDemo</h1>
-    <p id='diceOutput'></p>
-    <script src="diceRoll.js"></script>
-    <form id="frm1">
+  <body>
+    <div class="roller">
+      <h1>DiceyDemo</h1>
+      <p id='diceOutput'></br></p>
+      <script src="diceRoll.js"></script>
+      <form id="frm1">
         <input type='number' autocomplete="off" id='minRoll' placeholder='Min'><br>
         <input type='number' autocomplete="off" id='maxRoll' placeholder='Max'><br>
-        <input type='button' onclick='diceRoll(minRoll,maxRoll)' value='Roll The Dice'>
+        <input type='button' onclick='diceRoll(minRoll,maxRoll)' value='Roll'>
+      </div>
     </form>
-</body>
+  </body>
 </html>
