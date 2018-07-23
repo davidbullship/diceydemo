@@ -1,16 +1,36 @@
-p {
-    color:blue;
+/* Modifies only the number input boxes (min/max) */
+input[type=number] {
+  width: 38%;
+  padding: 4px 20px;
+  margin: 1px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Modifies the "Roll" button. */
+input[type=button] {
+  width: 38%;
+  padding: 4px;
+  margin: 1px 0px;
+}
+
+/* Modifies the border around the program */
+.roller {
+    margin: auto;
+    width: 45%;
+    border: 5px solid green;
+    padding: 12px;
+    text-align: center;
 }
 
 body {
-    alight:center;
+  background-color: #00b349;
 }
+
+/* Remove spinner on input of number */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-input: {
-    width: 10%;
 }
